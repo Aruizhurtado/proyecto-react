@@ -1,0 +1,427 @@
+/**********************************************estilos generales****************************************************
+********************************************************************************************************************
+*******************************************************************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    width: 100%;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 100px;
+    padding: 0 4rem;
+    
+} 
+
+h2{
+    padding: 3rem 2rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(53, 51, 51);
+}
+
+h3{
+    font-size: 1.2rem;
+    padding: 0 2rem 0;
+    margin-bottom: 20px;
+    color: rgb(53, 51, 51);
+}
+
+p{
+    font-size: 1rem;
+    padding: 0 2rem 0;
+    line-height: 1.7;
+    color: rgb(53, 51, 51);
+    }
+
+/**********************************************Header****************************************************/
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    
+}
+
+ nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    color: rgb(199, 212, 20);
+}
+
+.logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+main.page-content {
+    padding-top: 100px;
+}
+
+
+/**********************************************Footer****************************************************/
+
+.pie{
+    margin-top: 50px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.228);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 15px;
+    padding: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.pie h3{
+    color: rgb(53, 51, 51);
+    font-size: 1rem;
+}
+
+.iconos img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.iconos img:hover{
+    transform: scale(1.1);
+}
+
+.direccion p{
+    font-size: 0.8rem;
+}
+
+.avisoLegal a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/**********************************************pagina de inicio****************************************************
+********************************************************************************************************************
+*******************************************************************************************************************/
+
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+    background: url(../Imagenes/luxury-car-6589869_1280.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+}
+
+.acercade{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+}
+
+.texto-acercade{
+    width: 50%;
+    padding: 2rem;
+}
+.acercade img{
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/**********************************************servicos****************************************************/
+
+.Servicios{
+        width: 100%;
+        min-height: 60vh;
+        margin-top: 30px;
+        background-image: url(../Imagenes/diseno-grafico-de-geometria-de-arte-abstracto.jpg);
+        object-fit: cover;
+    }
+
+    .Servicios h2{
+        color: rgb(255, 255, 255);
+    }
+
+    .txt-servicio{
+        color: rgb(255, 255, 255);
+    }
+
+/**********************************************Noticias****************************************************/
+
+.contenedor-noticias {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.noticia {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    }
+
+.noticia:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    zoom: 1;
+    cursor: pointer;
+    }
+
+
+.noticia img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.noticia h3, .noticia p{
+    margin: 15px 0;
+    padding: 0;
+    }
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    }
+
+.autor, .fecha {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/**********************************************pagina de Modelos****************************************************
+********************************************************************************************************************
+*******************************************************************************************************************/
+
+.modelos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../Imagenes/car-headlight-buildings-reflecting-headlight-car.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+/**********************************************Galeria****************************************************/
+
+.galeria-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+  .galeria-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.galeria-img:hover {
+  transform: scale(1.02);
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;  
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+
+/**********************************************pagina de Presupuesto****************************************************
+********************************************************************************************************************
+*******************************************************************************************************************/
+
+.presupuesto{
+    background-image: url(../Imagenes/28803.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 80vh;
+}
+
+.formulario-presupuesto{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+fieldset{
+    border: 1px solid #252424;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 10px auto;
+    
+}
+
+legend{
+    font-weight: bold;
+}
+
+.campo{
+    margin-bottom: 15px;
+}
+
+.extra {
+    margin: 5px;
+}
+
+.boton{
+    margin-right: 10px;
+    padding: 5px;
+
+    
+}
+
+#enviar{
+   background-color: rgb(255, 255, 255);
+   color:  rgb(70, 16, 218);
+   border-color: blue;
+}
+
+#enviar:hover{
+    background-color: rgb(70, 16, 218);
+    color: rgb(255, 255, 255);
+}
+
+#borrar:hover{
+    background-color: rgb(53, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.error{
+    color: red;
+    font-size: small;
+}
+
+.datos{
+    padding: 20px;
+    text-align: center;
+}
+
+.datos img{
+     width: 30px;
+    height: 30px;
+    margin: 5px;
+}

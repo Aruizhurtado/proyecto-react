@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "SEAT FR 75 aniversario: deportividad, estilo y homenaje a una historia de éxito",
+    "descripcion": "Aniversario 75 del SEAT FR SEAT celebra sus 75 años de trayectoria con una edición especial que reúne lo mejor",
+    "autor": "Cristhian González",
+    "fecha": "31/7/2025",
+    "categoria": "Actualidad",
+    "imagen": "./coche-rojo-rapido-en-la-vista-trasera-de-la-carretera.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Opel Frontera eléctrico: el regreso de un clásico ahora con más autonomía",
+    "descripcion": "Nuevo Opel Frontera eléctrico El nuevo Opel Frontera eléctrico marca un hito para la marca alemana al...",
+    "autor": "Cristhian González",
+    "fecha": "30/7/2025",
+    "categoria": "Coches eléctricos",
+    "imagen":  "./coche-oscuro-en-la-autopista-noche-conducir-paisaje-de-verano.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Motor Ecotec: eficiencia, fiabilidad y bajo consumo",
+    "descripcion": "Ecotec Engine: ¿Qué es y qué ventajas ofrece esta tecnología de motor? Los motores Ecotec han sido...",
+    "autor": "Marta Rodriguez",
+    "fecha": "29/7/2025",
+    "categoria": "Mantenimiento y mecánica",
+    "imagen":  "../motor-del-coche.jpg"
+  }
+]
+
