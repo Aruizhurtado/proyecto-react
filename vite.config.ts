@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: 'https://Aruizhurtado.github.io/proyecto-react',
+  base: '/proyecto-react/',
 })
