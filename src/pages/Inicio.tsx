@@ -1,5 +1,5 @@
 import Galeria from "../components/Galeria";
-import Noticias from "../components/noticias"
+import Noticias from "../components/Noticias"
 
 const acercaImg = new URL("../assets/Imagenes/cliente-feliz-en-concesionario-de-automoviles-con-vendedor.jpg", import.meta.url).href;
 

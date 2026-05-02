@@ -8,7 +8,7 @@ function Contacto() {
       <h1>Visítanos</h1>
       </section>
       <div className="datos">
-            <img className="iconos" src={contactoImg} />
+            <img src={contactoImg} />
             <p>C. del Azafrán, 24, Oficina 3B, Moncloa - Aravaca, 28023 Madrid</p>
             <p>info@diannasanchez.com</p>
             <p>629 019 412</p>

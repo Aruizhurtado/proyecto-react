@@ -2,7 +2,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useState } from "react";
 import "../assets/Estilos/App.css";
 
-const modules = import.meta.glob("../assets/imagenes/galeria/*.jpg", {
+const modules = import.meta.glob("../assets/Imagenes/galeria/*.jpg", {
   eager: true,
 });
 

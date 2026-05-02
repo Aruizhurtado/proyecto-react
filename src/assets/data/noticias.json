@@ -6,7 +6,7 @@
     "autor": "Cristhian González",
     "fecha": "31/7/2025",
     "categoria": "Actualidad",
-    "imagen": "./coche-rojo-rapido-en-la-vista-trasera-de-la-carretera.jpg"
+    "imagen": "/coche-rojo-rapido-en-la-vista-trasera-de-la-carretera.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "autor": "Cristhian González",
     "fecha": "30/7/2025",
     "categoria": "Coches eléctricos",
-    "imagen":  "./coche-oscuro-en-la-autopista-noche-conducir-paisaje-de-verano.jpg"
+    "imagen": "/coche-oscuro-en-la-autopista-noche-conducir-paisaje-de-verano.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "autor": "Marta Rodriguez",
     "fecha": "29/7/2025",
     "categoria": "Mantenimiento y mecánica",
-    "imagen":  "../motor-del-coche.jpg"
+    "imagen": "/motor-del-coche.jpg"
   }
 ]
 
