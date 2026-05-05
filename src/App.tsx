@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import "./assets/Estilos/App.css"
 import Inicio from "./pages/Inicio"
 import Modelos from "./pages/Modelos"
@@ -13,7 +13,7 @@ import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 function App() {
   return (
 
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
 
       <main className="page-content">
@@ -29,7 +29,7 @@ function App() {
       </main>
 
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
