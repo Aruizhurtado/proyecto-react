@@ -202,7 +202,6 @@ main.page-content {
 
 .hero {
   height: 80vh;
-  min-height: 400px;
   background-image: url("../Imagenes/luxury-car-6589869_1280.jpg");
   background-size: cover;
   background-position: center;
