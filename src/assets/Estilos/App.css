@@ -201,6 +201,7 @@ main.page-content {
 
 
 .hero {
+  width: 100%;
   height: 80vh;
   background-image: url("../Imagenes/luxury-car-6589869_1280.jpg");
   background-size: cover;
@@ -209,12 +210,12 @@ main.page-content {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
 }
 
 .hero h1 {
   color: white;
   text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  padding-top: 0;
 }
 
 /* móvil */
@@ -226,6 +227,7 @@ h1 {
 
  h2{
     font-size: 2rem;
+    font-weight: 600;
   }
 
   h3{
