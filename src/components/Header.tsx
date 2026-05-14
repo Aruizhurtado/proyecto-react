@@ -1,23 +1,25 @@
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
+    <nav className="nav">
+      <h2 className="logo">Panther</h2>
 
-    <nav>
-        <h2 className="logo">Panther</h2>
-        <ul>
+      <button className="hamburger" onClick={() => setOpen(!open)}>
+        ☰
+      </button>
 
-            <li> <Link to={"/"}> Inicio </Link> </li>
-            <li> <Link to={"/Modelos"}> Modelos </Link> </li>
-            <li> <Link to={"/Presupuesto"}> Presupuesto </Link> </li>
-            <li> <Link to={"/Contacto"}> Contacto </Link> </li>
-     
-
-        </ul>
-
+      <ul className={open ? "nav-links open" : "nav-links"}>
+        <li><Link to="/" onClick={() => setOpen(false)}>Inicio</Link></li>
+        <li><Link to="/Modelos" onClick={() => setOpen(false)}>Modelos</Link></li>
+        <li><Link to="/Presupuesto" onClick={() => setOpen(false)}>Presupuesto</Link></li>
+        <li><Link to="/Contacto" onClick={() => setOpen(false)}>Contacto</Link></li>
+      </ul>
     </nav>
-    
-  )
+  );
 }
 
-export default Header
+export default Header;

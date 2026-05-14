@@ -18,13 +18,13 @@ section{
 
 h1{
     font-size: 3.5rem;
-    margin-top: 100px;
-    padding: 0 4rem;
+    padding: 4rem;
+    text-align: center;
     
 } 
 
 h2{
-    padding: 3rem 2rem;
+    padding: 20px;
     font-size: 3rem;
     font-weight: lighter;
     line-height: 1.4;
@@ -87,6 +87,43 @@ main.page-content {
     padding-top: 100px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: black;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
 
 /**********************************************Footer****************************************************/
 
@@ -132,60 +169,145 @@ main.page-content {
     background-color: rgb(0, 0, 0);
 }
 
+@media (max-width: 768px) {
+
+    .pie {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .direccion {
+        text-align: center;
+    }
+
+    .avisoLegal a {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
 
 /**********************************************pagina de inicio****************************************************
 ********************************************************************************************************************
 *******************************************************************************************************************/
 
 
-.hero{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 110vh;
-    background: url(../Imagenes/luxury-car-6589869_1280.jpg);
-    background-position: bottom;
-    background-size: cover;
-    color: white;
+.hero {
+  height: 80vh;
+  min-height: 400px;
+  background-image: url("../Imagenes/luxury-car-6589869_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.acercade{
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    justify-content: center;
-    background-color: white;
-    display: flex;
+.hero h1 {
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
-.texto-acercade{
-    width: 50%;
-    padding: 2rem;
+/* móvil */
+@media (max-width: 768px) {
+
+h1 {
+    font-size: 2rem;
+  }
+
+ h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  
 }
-.acercade img{
-    width: 50%;
-    height: 100vh;
-    object-fit: cover;
+
+.acercade {
+  display: flex;
+  align-items: center;
+  
+}
+
+.acercade img {
+  width: 50%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.texto-acercade {
+  width: 50%;
+}
+
+/* tablet/móvil */
+@media (max-width: 768px) {
+  .acercade {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .acercade img,
+  .texto-acercade {
+    width: 100%;
+  }
+
+ 
 }
 
 
 /**********************************************servicos****************************************************/
 
-.Servicios{
-        width: 100%;
-        min-height: 60vh;
-        margin-top: 30px;
-        background-image: url(../Imagenes/diseno-grafico-de-geometria-de-arte-abstracto.jpg);
-        object-fit: cover;
-    }
+.Servicios {
+  width: 100%;
+  min-height: 60vh;
+  margin-top: 30px;
 
-    .Servicios h2{
-        color: rgb(255, 255, 255);
-    }
+  background-image: url(../Imagenes/diseno-grafico-de-geometria-de-arte-abstracto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    .txt-servicio{
-        color: rgb(255, 255, 255);
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 20px;
+  text-align: center;
+
+  position: relative;
+}
+
+.Servicios::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Servicios h2,
+.txt-servicio {
+  position: relative;
+  z-index: 100;
+  color: white;
+}
 
 /**********************************************Noticias****************************************************/
 
